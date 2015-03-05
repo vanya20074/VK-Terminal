@@ -9,5 +9,5 @@ https://oauth.vk.com/authorize?client_id=app_id&redirect_uri=http://api.vk.com/b
 app_id - yours app id
 
 File auth.properties must have 2 values<br>
-userId =
+userId =<br>
 accessToken =
