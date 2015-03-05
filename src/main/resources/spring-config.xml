@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="requestBean" class="org.vanya.Request">
+        <property name="userId" value="${userId}"/>
+        <property name="access_token" value="${accessToken}"/>
+    </bean>
+
+    <bean id="responseBean" class="org.vanya.Response">
+        <property name="userId" value="${userId}"/>
+        <property name="access_token" value="${accessToken}"/>
+    </bean>
+    <bean
+            class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="locations">
+            <value>classpath:auth.properties</value>
+        </property>
+    </bean>
+</beans>
