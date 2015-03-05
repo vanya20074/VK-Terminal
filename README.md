@@ -1,5 +1,5 @@
 # VK-Terminal
-Linux terminal in vk chat
+Transfer linux terminal into vk chat
 
 exec some command<br>
 cd some_path
