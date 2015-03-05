@@ -9,9 +9,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.net.URL;
 
-/**
- * Created by vanya on 01.03.15.
- */
+
 public class Request {
 
     private int userId;
@@ -36,6 +34,7 @@ public class Request {
     public Request() {
     }
 
+    //get command from chat
     public String getRequest() throws Exception {
 
         String json = null;

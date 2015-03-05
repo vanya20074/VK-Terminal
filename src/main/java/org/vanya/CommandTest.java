@@ -27,7 +27,6 @@ public class CommandTest {
         while (true) {
 
             recievedCommandLine = request.getRequest();
-           // Thread.sleep(3000);
 
             String parameters = null;
             String[] commandLineSplited = recievedCommandLine.split(" ");
@@ -46,7 +45,6 @@ public class CommandTest {
             }
             if (command != null) {
                 command.execute();
-
                 response.sendMessageBack();
             }
             Thread.sleep(3000);

@@ -5,9 +5,7 @@ import org.vanya.Singletons.SendBuffer;
 
 import java.io.File;
 
-/**
- * Created by vanya on 01.03.15.
- */
+//realization of cd command
 public class CdCommad implements Command {
 
     private String parameters;

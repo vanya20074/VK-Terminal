@@ -5,9 +5,7 @@ import org.vanya.Singletons.SendBuffer;
 
 import java.io.File;
 
-/**
- * Created by vanya on 01.03.15.
- */
+//realization of ls command
 public class LsCommand implements Command {
 
     private String parameters = null;

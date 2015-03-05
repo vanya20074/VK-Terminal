@@ -6,10 +6,7 @@ import org.vanya.Singletons.SendBuffer;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
-
-/**
- * Created by vanya on 01.03.15.
- */
+//command for read some file, work bad, need fix
 public class ReadCommand implements Command {
 
     private String parameters;

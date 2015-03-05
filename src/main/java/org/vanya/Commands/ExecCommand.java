@@ -7,9 +7,7 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.InputStreamReader;
 
-/**
- * Created by vanya on 03.03.15.
- */
+//exec linux terminal command
 public class ExecCommand implements Command {
 
     private String parameters;
