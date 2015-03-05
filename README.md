@@ -1,7 +1,7 @@
 # VK-Terminal
 Linux terminal in vk chat
 
-exec some command
+exec some command<br>
 cd some_path
 
 url for get acces token (add it into auth.properties)<br>
