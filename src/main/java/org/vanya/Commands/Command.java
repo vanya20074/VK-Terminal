@@ -3,9 +3,15 @@ package org.vanya.Commands;
 import java.io.FileNotFoundException;
 
 /**
- * Created by vanya on 01.03.15.
+ * Interface that must be implemented by commands
  */
 public interface Command {
     //use for execute command after it will be created by creator
+
+    /**
+     * Method used for execute command after it will be created by creator
+     *
+     * @throws FileNotFoundException
+     */
     public void execute() throws FileNotFoundException;
 }

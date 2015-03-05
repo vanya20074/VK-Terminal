@@ -5,7 +5,9 @@ import org.vanya.Singletons.SendBuffer;
 
 import java.io.File;
 
-//realization of ls command
+/**
+ * Command that return file and catalog list
+ */
 public class LsCommand implements Command {
 
     private String parameters = null;
@@ -23,10 +25,10 @@ public class LsCommand implements Command {
         String message = "";
         for (String tmp : file.list()) {
             message = message + "<br>" + tmp;
-            //System.out.println(tmp);
+
         }
         SendBuffer.getInstance().setMessage(message);
-        //LastCommand.getInstance().setLastCommand(message);
+
     }
 
 

@@ -7,7 +7,9 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.InputStreamReader;
 
-//exec linux terminal command
+/**
+ * Command that execute terminal command
+ */
 public class ExecCommand implements Command {
 
     private String parameters;
@@ -18,14 +20,17 @@ public class ExecCommand implements Command {
 
     @Override
     public void execute() throws FileNotFoundException {
-        //exec(CurrentPath.getInstance().getCurrentPath());
+
+        /**
+         * execute command and wrote result into SendBuffer
+         */
         SendBuffer.getInstance().setMessage(exec("cd " + CurrentPath.getInstance().getCurrentPath() + " && " +parameters));
     }
     private static String exec(String command) {
 
         String[] cmd = {"/bin/sh", "-c", command};
         String message = "";
-        // String[] cmd = {"/bin/sh", "-c", "cd .. && ls"};
+
         try {
             String line;
 

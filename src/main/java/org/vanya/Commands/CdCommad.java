@@ -10,6 +10,10 @@ public class CdCommad implements Command {
 
     private String parameters;
 
+    /**
+     *
+     * @param parameters value of path
+     */
     public CdCommad(String parameters) {
         this.parameters = parameters;
     }
@@ -18,6 +22,9 @@ public class CdCommad implements Command {
 
     }
 
+    /**
+     * Change current path on path that setup in parameter
+     */
     @Override
     public void execute() {
         //TODO: remake it latter

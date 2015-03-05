@@ -34,7 +34,12 @@ public class Request {
     public Request() {
     }
 
-    //get command from chat
+    /**
+     * This method read last message in vk chat and return it
+     *
+     * @return message from chat
+     * @throws Exception
+     */
     public String getRequest() throws Exception {
 
         String json = null;

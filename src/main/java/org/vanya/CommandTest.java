@@ -7,7 +7,7 @@ import org.vanya.Commands.CommandCreator;
 import org.vanya.Commands.ConcreteCommandCreate;
 
 /**
- * Created by vanya on 01.03.15.
+ * @author vanya
  */
 public class CommandTest {
 

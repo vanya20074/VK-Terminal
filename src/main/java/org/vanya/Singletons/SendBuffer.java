@@ -1,7 +1,7 @@
 package org.vanya.Singletons;
 
 /**
- * Created by vanya on 01.03.15.
+ * Used for sored back message before send it into chat
  */
 public class SendBuffer {
 

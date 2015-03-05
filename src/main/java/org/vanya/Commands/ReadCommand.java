@@ -6,7 +6,10 @@ import org.vanya.Singletons.SendBuffer;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
-//command for read some file, work bad, need fix
+
+/**
+ * command for read some file, work bad, need fix
+ */
 public class ReadCommand implements Command {
 
     private String parameters;
@@ -19,7 +22,7 @@ public class ReadCommand implements Command {
     public void execute() throws FileNotFoundException {
         String fileData = "";
         File file = new File(CurrentPath.getInstance().getCurrentPath() + "/" + parameters);
-        // File file = new File("/opt/user-scripts/network-mac.sh");
+
         if (file.isFile()) {
             Scanner in = new Scanner(file);
             int i = 10;
@@ -33,11 +36,11 @@ public class ReadCommand implements Command {
             String message = fileData.replaceAll("/", "%2F");
             message = message.replaceAll("#", "%23");
             SendBuffer.getInstance().setMessage(message);
-            //LastCommand.getInstance().setLastCommand(message);
+
         }
         else {
-            SendBuffer.getInstance().setMessage("File is not a file!");
-            //LastCommand.getInstance().setLastCommand("File is not a file!");
+            SendBuffer.getInstance().setMessage("File is a directory!");
+
         }
     }
 

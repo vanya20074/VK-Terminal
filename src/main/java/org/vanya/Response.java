@@ -32,7 +32,10 @@ public class Response {
 
     }
 
-    //send message back from SendBuffer
+    /**
+     * Send message that stored in SendBuffer
+     * @throws Exception
+     */
     public void sendMessageBack() throws Exception {
 
         String message = SendBuffer.getInstance().getMessage();

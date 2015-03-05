@@ -1,7 +1,7 @@
 package org.vanya.Singletons;
 
 /**
- * Created by vanya on 01.03.15.
+ * Stored current path
  */
 public class CurrentPath {
 

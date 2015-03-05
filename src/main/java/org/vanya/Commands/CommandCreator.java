@@ -1,7 +1,7 @@
 package org.vanya.Commands;
 
 /**
- * Created by vanya on 01.03.15.
+ * Interface for implemeted by creator
  */
 public interface CommandCreator {
     Command getCommand (String commandName, String parameters);
